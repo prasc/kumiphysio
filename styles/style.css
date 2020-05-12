@@ -1,0 +1,21 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.normal {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.mailchimp {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */
