@@ -8,25 +8,33 @@ body {
   margin: 0 auto;
 }
 
-h2, h3 {
-  text-align: center;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.semi-bold {
-  font-weight: 600;
-}
-
-.normal {
-  font-weight: 300;
-  font-size: 1rem;
+.section-bg {
+  background-color: #f8f9f9;
 }
 
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-style: normal;
+  font-size: 2.625rem;
+  line-height: 3.5625rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
 }
 
 nav {
@@ -43,12 +51,7 @@ nav img {
   width: auto;
 }
 
-nav div:first-of-type {
-  width: 25%;
-}
-
 nav div:last-of-type {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,6 +61,23 @@ nav div:last-of-type {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  background: #EEEEEE;
+  border-radius: 0.25rem;
+  padding: 10px 20px;
+}
+
+.contact-button {
+  background: red;
+  padding: 10px 20px;
+  border-radius: 5%;
+  color: white;
 }
 
 header {
@@ -81,16 +101,26 @@ header div img {
   opacity: 0.5;
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .services div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
-  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services div p {
-  margin-left: 50px;
+  text-align: center;
 }
 
 .about {

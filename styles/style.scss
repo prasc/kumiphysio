@@ -1,6 +1,6 @@
 //----------------------------- Variables
 
-$consistent-gap: 1.5rem;
+$consistent-gap: 100px;
 
 //----------------------------- General
 
@@ -14,25 +14,37 @@ body {
   margin: 0 auto;
 }
 
-h2, h3 {
-  text-align: center;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.semi-bold {
-  font-weight: 600;
-}
-
-.normal {
-  font-weight: 300;
-  font-size: 1rem;
+.section-bg {
+  background-color: #f8f9f9;
 }
 
 img {
   max-width: 100%;
+}
+
+
+//----------------------------- Text
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-style: normal;
+  font-size: 2.625rem;
+  line-height: 3.5625rem;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
+.center {
+  text-align: center;
 }
 
 //----------------------------- Nav
@@ -44,17 +56,29 @@ nav {
       height: 100px;
       width: auto;
     }
-    div:first-of-type {
-      width: 25%
-    }
     div:last-of-type {
-      width: 50%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 }
 
+a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  background: #EEEEEE;
+  border-radius: 0.25rem;
+  padding: 10px 20px;
+}
+  
+.contact-button {
+  background: red;
+  padding: 10px 20px;
+  border-radius: 5%;
+  color: white;
+}
 //----------------------------- Header
 
 header {
@@ -78,12 +102,13 @@ header {
 //----------------------------- Services
 
 .services {
+  display: flex;
+  justify-content: space-between;
   div {
     display: flex;
-    width: 50%;
-    margin: 0 auto;
+    align-items: center;
     p {
-      margin-left: 50px;
+      text-align: center;
     }
   }
 }
