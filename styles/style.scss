@@ -70,7 +70,21 @@ header {
      img {
        width: 100%;
        max-width: 1200px;
+       opacity: 0.5;
      }
+  }
+}
+
+//----------------------------- Services
+
+.services {
+  div {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    p {
+      margin-left: 50px;
+    }
   }
 }
 

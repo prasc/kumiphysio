@@ -78,6 +78,19 @@ header div {
 header div img {
   width: 100%;
   max-width: 1200px;
+  opacity: 0.5;
+}
+
+.services div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.services div p {
+  margin-left: 50px;
 }
 
 .about {
