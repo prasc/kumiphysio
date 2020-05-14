@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+h2, h3 {
+  text-align: center;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -58,6 +62,7 @@ nav div:last-of-type {
 
 header {
   position: relative;
+  text-align: center;
   z-index: 0;
 }
 
@@ -65,10 +70,72 @@ header div {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
 }
 
-.mailchimp {
+header div img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about div:first-of-type {
+  width: 40%;
+}
+
+.about div:last-of-type {
   width: 50%;
+}
+
+.credentials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credentials div {
+  width: 20%;
+}
+
+.credentials img {
+  width: 100;
+  border: none;
+}
+
+.contact .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .flex div:first-of-type {
+  width: 40%;
+}
+
+.contact .flex div:last-of-type {
+  width: 50%;
+}
+
+.contact .flex label {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
