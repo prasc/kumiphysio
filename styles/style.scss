@@ -37,11 +37,17 @@ body {
 
 h1,
 h2,
-h3 {
+h3, 
+h4 {
+  font-family: "PT Serif";
   font-style: normal;
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 h1,
@@ -64,6 +70,10 @@ h3 {
 
 .padding {
   padding: $consistent-gap;
+}
+
+.zero-margin {
+  margin: 0;
 }
 
 //----------------------------- Nav
@@ -189,6 +199,13 @@ header {
     label {
       display: block;
     }
+  }
+}
+
+form {
+  input:last-of-type {
+    display: block;
+    margin-top: 20px;
   }
 }
 
