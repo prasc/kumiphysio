@@ -30,7 +30,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+a {
   font-family: "PT Serif";
   font-style: normal;
   font-size: 2rem;
@@ -75,6 +76,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 100;
 }
 
 nav img {
@@ -112,6 +114,15 @@ a {
   margin-left: 50px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
+}
+
 header {
   position: relative;
   text-align: center;
@@ -139,8 +150,9 @@ header div h2 {
 header img {
   max-height: 700px;
   width: 100%;
-  opacity: 0.7;
-  width: 1400px;
+  opacity: 0.6;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
 }
 
 .services {
@@ -241,5 +253,73 @@ footer {
 
 footer > div {
   width: 30%;
+}
+
+footer h4 {
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+footer img {
+  width: 60px;
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-serif-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("PT Serif"), local("PTSerif-Regular"), url("../fonts/pt-serif-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v11-latin-regular.woff2") format("woff2"), url("../fonts/pt-serif-v11-latin-regular.woff") format("woff"), url("../fonts/pt-serif-v11-latin-regular.ttf") format("truetype"), url("../fonts/pt-serif-v11-latin-regular.svg#PTSerif") format("svg");
+  /* Legacy iOS */
+}
+
+/* pt-serif-700 - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-serif-v11-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("PT Serif Bold"), local("PTSerif-Bold"), url("../fonts/pt-serif-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v11-latin-700.woff2") format("woff2"), url("../fonts/pt-serif-v11-latin-700.woff") format("woff"), url("../fonts/pt-serif-v11-latin-700.ttf") format("truetype"), url("../fonts/pt-serif-v11-latin-700.svg#PTSerif") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v17-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-300.woff") format("woff"), url("../fonts/open-sans-v17-latin-300.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-300.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v17-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v17-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-regular.woff") format("woff"), url("../fonts/open-sans-v17-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v17-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/open-sans-v17-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v17-latin-700.woff") format("woff"), url("../fonts/open-sans-v17-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v17-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */
 }
 /*# sourceMappingURL=style.css.map */
