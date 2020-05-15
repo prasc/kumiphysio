@@ -17,19 +17,24 @@ img {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.7;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-style: normal;
-  font-size: 2.625rem;
-  line-height: 3.5625rem;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -68,7 +73,7 @@ a {
   font-size: 1.25rem;
   text-decoration: none;
   color: black;
-  background: #EEEEEE;
+  background: #eeeeee;
   border-radius: 0.25rem;
   padding: 10px 20px;
 }
@@ -84,6 +89,7 @@ header {
   position: relative;
   text-align: center;
   z-index: 0;
+  max-height: 700px;
 }
 
 header div {
@@ -93,12 +99,14 @@ header div {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5%;
 }
 
-header div img {
+header img {
+  max-height: 700px;
   width: 100%;
-  max-width: 1200px;
-  opacity: 0.5;
 }
 
 .services {
