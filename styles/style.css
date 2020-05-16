@@ -117,7 +117,7 @@ a:hover {
 
 .contact-button {
   background: red;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border-radius: 5%;
   color: white;
 }
@@ -231,27 +231,94 @@ header .header-image-container .middle {
   }
 }
 
-.services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.services p {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .services div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.services div img {
+  width: 96px;
+  height: 149px;
+}
+
+.services div p {
+  text-align: left;
+  padding-left: 2rem;
+  width: 80%;
+  font-weight: normal;
+}
+
+.services div:last-of-type {
+  padding-bottom: 0;
+}
+
+.del-services p {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.del-services div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.del-services div img {
+  width: 8rem;
+  height: 200px;
+}
+
+.del-services div p {
+  text-align: left;
+  padding-left: 2rem;
+  font-weight: normal;
+  width: 50%;
+}
+
+.billing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.services div p {
-  padding-left: 10px;
-  text-align: center;
+.billing h2 {
+  font-size: 1.5rem;
+}
+
+.billing div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+#about h2 {
+  margin-bottom: 2rem;
 }
 
 .about {
@@ -268,7 +335,12 @@ header .header-image-container .middle {
 }
 
 .about div:last-of-type {
-  width: 50%;
+  max-width: 50%;
+}
+
+.about div:last-of-type p:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .frank-text h4 {
