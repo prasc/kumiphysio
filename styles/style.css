@@ -392,7 +392,11 @@ header .header-image-container .middle {
   display: block;
 }
 
-form input:last-of-type {
+form label {
+  display: block;
+}
+
+form button {
   display: block;
   margin-top: 20px;
 }

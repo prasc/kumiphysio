@@ -338,7 +338,10 @@ header {
 }
 
 form {
-  input:last-of-type {
+  label {
+    display: block;
+  }
+  button {
     display: block;
     margin-top: 20px;
   }

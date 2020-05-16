@@ -175,18 +175,26 @@
             </p>
           </div>
           <div>
-            <form>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" />
-
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" />
-
-              <label>Message:</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-
-              <input type="submit" value="Submit" />
-            </form>
+            <form
+            action="https://formspree.io/mjvagkar"
+            method="POST">
+            <label for="">
+              Your name:
+            </label>
+            <input type="text">
+            <label>
+              Your email:
+            </label>
+            <input type="text" name="_replyto">
+            <label>
+              Your message:
+            </label>
+            <textarea name="message"></textarea>
+          
+            <!-- your other form fields go here -->
+          
+            <button type="submit">Send</button>
+          </form>
           </div>
         </div>
       </div>
