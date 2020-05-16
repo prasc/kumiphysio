@@ -1,5 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .wrapper {
@@ -79,11 +81,15 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 0.8;
 }
 
 nav img {
-  height: 100px;
-  width: auto;
+  height: 75px;
+  width: 97px;
 }
 
 nav div:last-of-type {
@@ -105,6 +111,10 @@ a {
   color: black;
 }
 
+a:hover {
+  color: red;
+}
+
 .contact-button {
   background: red;
   padding: 10px 20px;
@@ -112,52 +122,45 @@ a {
   color: white;
 }
 
-.menu-items a {
-  margin-left: 50px;
+.contact-button:hover {
+  color: black;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  opacity: 0.8;
+.menu-items a {
+  margin-left: 50px;
 }
 
 header {
   position: relative;
   text-align: center;
   z-index: 0;
-  max-height: 700px;
+  height: 500px;
 }
 
 header .header-image-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 10%;
+  left: 10%;
   z-index: 10;
-  background: #1b1b1b;
-  padding: 10px 20px;
-  border-radius: 5%;
-  opacity: 0.8;
+  line-height: 5rem;
 }
 
 header .header-image-text h2 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 3rem;
-  letter-spacing: 0.3rem;
+  font-size: 5rem;
+}
+
+header .header-image-text p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 3rem;
 }
 
 header .header-image-container {
-  height: 700px;
+  height: 500px;
   width: 100%;
   position: relative;
+  opacity: 0.5;
 }
 
 header .header-image-container img {
@@ -166,8 +169,10 @@ header .header-image-container img {
   right: 0;
   left: 0;
   bottom: 0;
-  max-height: 700px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
 }
 
 header .header-image-container .top {
@@ -342,13 +347,19 @@ footer p {
   font-weight: 300;
 }
 
+footer a {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+  color: red;
+}
+
 footer img {
   width: 60px;
 }
 
 /* pt-serif-regular - latin */
 @font-face {
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/pt-serif-v11-latin-regular.eot");
@@ -359,7 +370,7 @@ footer img {
 
 /* pt-serif-700 - latin */
 @font-face {
-  font-family: 'PT Serif';
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/pt-serif-v11-latin-700.eot");
@@ -370,7 +381,7 @@ footer img {
 
 /* open-sans-300 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/open-sans-v17-latin-300.eot");
@@ -381,7 +392,7 @@ footer img {
 
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/open-sans-v17-latin-regular.eot");
@@ -392,7 +403,7 @@ footer img {
 
 /* open-sans-700 - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/open-sans-v17-latin-700.eot");
