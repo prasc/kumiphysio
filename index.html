@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
 </head>
-  <body>
+  <body id="home">
     <!-- Top Nav -->
 
     <nav class="section-bg" id="navbar">
@@ -18,10 +18,10 @@
           </a>
         </div>
         <div class="menu-items">
-          <a href="">Home</a>
-          <a href="">Services</a>
-          <a href="">About</a>
-          <a href="" class="contact-button">Contact</a>
+          <a data-scroll href="#home">Home</a>
+          <a data-scroll href="#services">Services</a>
+          <a data-scroll href="#about">About</a>
+          <a data-scroll href="#contact-frank" class="contact-button">Contact</a>
         </div>
       </div>
     </nav>
@@ -42,7 +42,7 @@
 
     <!-- Services -->
 
-    <section class="section-bg padding-top">
+    <section class="section-bg padding-top" id="services">
       <h2>Services</h2>
       <div class="services wrapper padding-bottom">
         <div>
@@ -62,7 +62,7 @@
 
     <!-- About -->
 
-    <section class="padding alternative-section-bg">
+    <section class="padding alternative-section-bg" id="about">
       <div class="wrapper">
           <div class="about">
             <div>
@@ -114,7 +114,7 @@
 
     <!-- Contact Us -->
 
-    <section class="contact padding alternative-section-bg">
+    <section class="contact padding alternative-section-bg" id="contact-frank">
       <div class="wrapper">
         <p class="center zero-margin">Contact Us</p>
         <h2>Get in Touch</h2>
@@ -167,6 +167,10 @@
       </div>
     </footer>
   </body>
-
+  
+  <script src="js/src/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
   <script src="js/script.js"></script>
 </html>
