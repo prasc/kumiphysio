@@ -1,35 +1,3 @@
-//---------------------------------------- Image change
-
-const picPaths  = [
-    "assets/background-images/1.jpg",
-    "assets/background-images/2.jpg",
-    "assets/background-images/3.jpg",
-]
-
-
-// An index to track the contender image 
-var imageIndex = 0;
-const imageContainer = document.getElementById('header-image');
-
-
-// An event callback for starting the interval
-function startInterval() {
- setInterval(displayNextImage, 5000);
-}
-
-function displayNextImage() {
-    imageContainer.src = picPaths[imageIndex];
-  if(imageIndex === (picPaths.length-1)) {
-    imageIndex = 0;
-  }
-  else {
-    imageIndex = imageIndex + 1; // It can be replaced with imageIndex ++  
-  }
-}
-
-window.onload=function() {
-    startInterval();
-}
 
 
 //---------------------------------------- Navbar

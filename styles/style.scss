@@ -127,29 +127,67 @@ header {
   text-align: center;
   z-index: 0;
   max-height: 700px;
-  div {
+  .header-image-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50% , -50%);
     z-index: 10;
+    background: #1b1b1b;
+    padding: 10px 20px;
+    border-radius: 5%;
+    opacity: 0.8;
     h2 {
       color: white;
       text-transform: uppercase;
       font-size: 2.5rem;
       font-weight: bold;
-      line-height: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: 0.3rem;
     }
   }
-  img {
-    max-height: 700px;
+  .header-image-container {
+    height: 700px;
     width: 100%;
-    opacity: 0.6;
-    -webkit-transition: opacity 200ms linear;
-    -moz-transition: opacity 200ms linear;
-    -o-transition: opacity 200ms linear;
-    -ms-transition: opacity 200ms linear;
-    transition: opacity 200ms linear;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      max-height: 700px;
+      width: 100%;
+    }
+    .top {
+      animation-name: cf3FadeInOut;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+      animation-direction: alternate;
+    }
+    .middle {
+      animation-name: cf3FadeInOut;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-direction: alternate;
+    }
+  }
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
   }
 }
 
@@ -178,6 +216,15 @@ header {
   }
   div:last-of-type {
     width: 50%;
+  }
+}
+
+.frank-text {
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.7;
   }
 }
 
