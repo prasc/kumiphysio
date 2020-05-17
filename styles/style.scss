@@ -400,6 +400,21 @@ form {
   button {
     display: block;
     margin-top: 20px;
+    background: red;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    font-family: "PT Serif";
+  }
+  input {
+    width: 500px;
+  }
+  textarea {
+    width: 500px;
+    height: 120px;
+  }
+  button:hover {
+    color: black;
   }
 }
 

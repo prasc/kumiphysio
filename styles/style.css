@@ -468,6 +468,24 @@ form label {
 form button {
   display: block;
   margin-top: 20px;
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-family: "PT Serif";
+}
+
+form input {
+  width: 500px;
+}
+
+form textarea {
+  width: 500px;
+  height: 120px;
+}
+
+form button:hover {
+  color: black;
 }
 
 footer {
