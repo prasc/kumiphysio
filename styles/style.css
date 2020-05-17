@@ -74,17 +74,20 @@ h3 {
   margin: 0;
 }
 
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .navbar-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 100;
   opacity: 0.8;
 }
 
@@ -105,14 +108,14 @@ h3 {
           align-items: center;
 }
 
-.navbar-container .contact-button {
+.contact-button {
   background: red;
   padding: 0.5rem 1rem;
   border-radius: 5%;
   color: white;
 }
 
-.navbar-container .contact-button:hover {
+.contact-button:hover {
   color: black;
 }
 

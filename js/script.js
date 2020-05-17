@@ -1,11 +1,9 @@
 // All animations will take exactly 500ms
 var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 400,
+  speed: 500,
   speedAsDuration: true,
   offset: 75,
 });
-
-
 
 // Mobile navbar
 
@@ -17,3 +15,9 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
+
+const menuItems = Array.from(document.querySelectorAll('.menu-items a'))
+
+menuItems.forEach(item => item.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+}))

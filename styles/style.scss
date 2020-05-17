@@ -84,12 +84,15 @@ h3 {
 
 //----------------------------- Nav
 
-.navbar-container {
-  display: flex;
+nav {
   position: sticky;
   top: 0;
-  justify-content: space-between;
   z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
   opacity: 0.8;
   img {
     height: 75px;
@@ -100,16 +103,17 @@ h3 {
     justify-content: space-between;
     align-items: center;
   }
-  .contact-button {
-    background: red;
-    padding: 0.5rem 1rem;
-    border-radius: 5%;
-    color: white;
-  }
-  
-  .contact-button:hover {
-    color: black;
-  }
+}
+
+.contact-button {
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  color: white;
+}
+
+.contact-button:hover {
+  color: black;
 }
 
 a {
