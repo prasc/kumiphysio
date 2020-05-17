@@ -11,11 +11,6 @@ body {
   margin: 0 auto;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* height of sticky header */
-}
-
 .wrapper {
   max-width: 1200px;
   width: 95%;
@@ -252,7 +247,6 @@ header {
       padding-left: 2rem;
       font-weight: normal;
       width: 50%;
-
     }
   }
 }
@@ -273,7 +267,6 @@ header {
   }
 }
 
-
 //----------------------------- About
 
 #about {
@@ -285,7 +278,7 @@ header {
 .about {
   display: flex;
   justify-content: space-between;
- 
+
   div:first-of-type {
     width: 40%;
   }
@@ -296,7 +289,6 @@ header {
       padding-top: 0;
     }
   }
-
 }
 
 .frank-text {
