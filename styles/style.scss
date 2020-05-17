@@ -84,21 +84,31 @@ h3 {
 
 //----------------------------- Nav
 
-nav {
+.navbar-container {
   display: flex;
-  justify-content: space-between;
-  z-index: 100;
   position: sticky;
   top: 0;
+  justify-content: space-between;
+  z-index: 100;
   opacity: 0.8;
   img {
     height: 75px;
     width: 97px;
   }
-  div:last-of-type {
+  .menu-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .contact-button {
+    background: red;
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+    color: white;
+  }
+  
+  .contact-button:hover {
+    color: black;
   }
 }
 
@@ -113,21 +123,62 @@ a:hover {
   color: red;
 }
 
-.contact-button {
-  background: red;
-  padding: 0.5rem 1rem;
-  border-radius: 5%;
-  color: white;
-}
-
-.contact-button:hover {
-  color: black;
-}
-
 .menu-items a {
   margin-left: 50px;
 }
 
+
+//----------------------------- Responsive Navbar
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 10%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+  
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .menu-items {
+    display: none !important;
+    width: 100%;
+  }
+
+  nav div:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .menu-items {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: $consistent-gap / 2;
+    a {
+      text-align: center;
+      padding:  .5rem 1rem;
+    }
+  }
+
+  .menu-items.active {
+    display: flex !important;
+  }
+}
+ 
 //----------------------------- Header
 
 header {
