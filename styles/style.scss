@@ -372,6 +372,14 @@ footer {
   }
 }
 
+//----------------------------- Media queries
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
+
 //----------------------------- Typography
 
 /* pt-serif-regular - latin */
@@ -464,12 +472,4 @@ footer {
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/open-sans-v17-latin-700.svg#OpenSans") format("svg"); /* Legacy iOS */
-}
-
-//----------------------------- Media queries
-
-@media only screen and (max-width: 900px) {
-}
-
-@media only screen and (max-width: 600px) {
 }
