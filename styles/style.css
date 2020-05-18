@@ -186,7 +186,7 @@ a:hover {
   }
   nav .menu-items a {
     text-align: center;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .menu-items.active {
     display: -webkit-box !important;
@@ -495,10 +495,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer > div {
-  width: 30%;
+  margin: 0 auto;
 }
 
 footer h4 {
@@ -648,7 +645,9 @@ footer img {
   }
   footer div {
     width: 50%;
-    margin-bottom: 1.3rem;
+  }
+  .stay-conntected {
+    margin-left: auto;
   }
 }
 
