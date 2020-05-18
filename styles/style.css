@@ -606,7 +606,7 @@ footer img {
   .about div:last-of-type p:first-of-type {
     padding-top: 20px;
   }
-  .frank-text h4 {
+  .about h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -706,6 +706,10 @@ footer img {
     padding-left: 0;
     margin: 0 auto;
   }
+  .about div:first-of-type {
+    width: 80%;
+    min-width: 309px;
+  }
   .about div:last-of-type {
     width: 100%;
     min-width: 500px;
@@ -713,6 +717,11 @@ footer img {
   }
   .about div:last-of-type p:first-of-type {
     padding-top: 20px;
+  }
+  .about h4 {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    width: 100%;
   }
 }
 
@@ -857,6 +866,10 @@ footer img {
 }
 
 @media only screen and (max-width: 400px) {
+  .about div:first-of-type {
+    width: 100%;
+    min-width: 250px;
+  }
   .about div:last-of-type {
     max-width: 320px;
     margin: 0 auto;

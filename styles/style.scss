@@ -525,9 +525,6 @@ footer {
         padding-top: 20px;
       }
     }
-  }
-
-  .frank-text {
     h4 {
       font-family: "Open Sans", sans-serif;
       font-size: 1.5rem;
@@ -535,6 +532,8 @@ footer {
       line-height: 1.7;
     }
   }
+
+
 
   //----------------------------- Credentials
 
@@ -626,6 +625,10 @@ footer {
   //----------------------------- About
 
   .about {
+    div:first-of-type {
+      width: 80%;
+      min-width: 309px;
+    }
     div:last-of-type {
       width: 100%;
       min-width: 500px;
@@ -633,6 +636,12 @@ footer {
       p:first-of-type {
         padding-top: 20px;
       }
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      width: 100%;
     }
   }
 }
@@ -781,6 +790,10 @@ footer {
   //----------------------------- About
 
   .about {
+      div:first-of-type {
+        width: 100%;
+        min-width: 250px;
+      }
     div:last-of-type {
       max-width: 320px;
       margin: 0 auto;
