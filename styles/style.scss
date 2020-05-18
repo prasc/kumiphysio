@@ -307,15 +307,24 @@ header {
 
 .billing {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .billing-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+
+  }
+  .billing-text-container {
+    width: 60%;
+  }
   h2 {
     font-size: 1.5rem;
+    text-align: left;
   }
   div {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 30%;
   }
 }
 
@@ -333,6 +342,7 @@ header {
 
   div:first-of-type {
     width: 40%;
+    text-align: center;
   }
   div:last-of-type {
     max-width: 50%;
@@ -566,6 +576,32 @@ footer {
   .stay-conntected {
     margin-left: auto;
   }
+
+   //----------------------------- Billing
+
+   .billing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .billing-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .billing-text-container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -646,26 +682,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  //----------------------------- Billing
-
-  .billing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      font-size: 1.5rem;
-    }
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin: 50px auto;
-    }
-  }
-}
 
 @media only screen and (max-width: 750px) {
   //----------------------------- Delivery of Services
