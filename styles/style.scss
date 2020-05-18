@@ -95,8 +95,8 @@ nav {
   justify-content: space-between;
   opacity: 0.8;
   img {
-    height: 75px;
-    width: 97px;
+    height: 95px;
+    width: 120px;
   }
   .menu-items {
     display: flex;
@@ -368,7 +368,7 @@ header {
   justify-content: space-between;
   align-items: center;
   div {
-    width: 18%;
+    width: 23%;
   }
   img {
     width: 100;
@@ -542,8 +542,6 @@ footer {
     }
   }
 
-
-
   //----------------------------- Credentials
 
   .credentials {
@@ -576,9 +574,9 @@ footer {
     margin-left: auto;
   }
 
-   //----------------------------- Billing
+  //----------------------------- Billing
 
-   .billing {
+  .billing {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -680,7 +678,6 @@ footer {
     }
   }
 }
-
 
 @media only screen and (max-width: 750px) {
   //----------------------------- Delivery of Services
@@ -805,10 +802,10 @@ footer {
   //----------------------------- About
 
   .about {
-      div:first-of-type {
-        width: 100%;
-        min-width: 250px;
-      }
+    div:first-of-type {
+      width: 100%;
+      min-width: 250px;
+    }
     div:last-of-type {
       max-width: 320px;
       margin: 0 auto;
