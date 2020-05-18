@@ -2,7 +2,7 @@
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 500,
   speedAsDuration: true,
-  offset: 95,
+  offset: 114.5,
 });
 
 // Mobile navbar
