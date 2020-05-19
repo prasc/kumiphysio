@@ -534,6 +534,16 @@ footer img {
   width: 60px;
 }
 
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(46, 49, 49, 0.3);
+}
+
+.copyright p {
+  color: black;
+}
+
 @media only screen and (max-width: 1115px) {
   .contact h2 {
     margin-bottom: 0.5rem;
