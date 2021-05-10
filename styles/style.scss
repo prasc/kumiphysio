@@ -340,6 +340,10 @@ header {
   display: flex;
   justify-content: space-between;
 
+  &:first-of-type {
+    margin-bottom: 3rem;
+  }
+
   div:first-of-type {
     width: 40%;
     text-align: center;

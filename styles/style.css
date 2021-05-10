@@ -411,6 +411,10 @@ header .header-image-container .middle {
           justify-content: space-between;
 }
 
+.about:first-of-type {
+  margin-bottom: 3rem;
+}
+
 .about div:first-of-type {
   width: 40%;
   text-align: center;
